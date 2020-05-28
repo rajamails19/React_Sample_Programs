@@ -1,0 +1,5 @@
+function Raja() {
+  return <h1> This is Sekhar, cool </h1>
+}
+
+ReactDOM.render(<Raja />, document.getElementById('root'));
