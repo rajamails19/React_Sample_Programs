@@ -1,0 +1,23 @@
+// Passing Objects into props and accessing those in subcomponents 
+
+class Sekhar extends React.Component{
+  render(){
+    return(
+      <h2> This is Sekhar sub {this.props.pass_add.apt}</h2>
+    )
+  }
+}
+class Raja extends React.Component {
+  render(){
+
+    const var_add = {apt:"122", city:"Alph", state:"G"}
+    return(
+      <div>
+        <h1> This is Raja Component </h1>
+        <Sekhar pass_add={var_add}/>
+      </div>
+    )
+  }
+}
+
+ReactDOM.render(<Raja />, document.getElementById('root'));
