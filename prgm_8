@@ -1,0 +1,14 @@
+
+// Pass Props into Constructor & Super
+
+class Raja extends React.Component {
+  constructor(props){
+    super(props);
+  }
+  render() {
+    return <h1> This is Raja Component {this.props.lastName} </h1>
+  }
+  }
+
+
+ReactDOM.render(<Raja lastName="Vaderav" />, document.getElementById('root'))
