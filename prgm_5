@@ -1,0 +1,18 @@
+class Sekhar extends React.Component {
+  render(){
+    return <h2> This is Sekhar Component </h2>
+  }
+}
+
+class Raja extends React.Component {
+  render() {
+    return (
+    <div><h1> This is Raja Component </h1>
+
+    <Sekhar />
+    </div>
+    )
+  }
+}
+
+ReactDOM.render(<Raja />, document.getElementById('root'));
