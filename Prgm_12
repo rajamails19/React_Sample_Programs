@@ -1,0 +1,19 @@
+class Sekhar extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      articles: [
+        { title: "React Sekhar Tutorial", id: 1 },
+        { title: "TypeScript Raja Tutorial", id: 2 }
+      ]
+    };
+  }
+
+  render() {
+    const { articles } = this.state;
+    return <ul>{articles.map(el => <li key={el.id}>{el.title}</li>)}</ul>;
+  }
+}
+
+ReactDOM.render(<Sekhar />, document.getElementById('root'));
