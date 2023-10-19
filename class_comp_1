@@ -1,7 +1,0 @@
-class Raja extends React.Component{
-  render() {
-    return <h1> This is Rajasekhar </h1>
-  }
-}
-
-ReactDOM.render(<Raja />, document.getElementById('root'));
